@@ -92,6 +92,34 @@
         </div>
       </div>
     </div>
+    <!------------------------------------------------ about end  ---------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur soluta ullam nemo eos placeat archiltecto eaque omnis. Doloribus vel, </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur soluta ullam nemo eos placeat architecto eaque omnis. Doloribus vel, </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <h2>Web/App Design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur soluta ullam nemo eos placeat architecto eaque omnis. Doloribus vel, </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
 
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
@@ -102,9 +130,17 @@
           tablink.classList.remove("active-link");
         }
         for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("tab-active");
+          tabcontent.classList.remove("tab-active");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("tab-active");
+
       }
     </script>
+
+
+
+
+
   </body>
 </html>
